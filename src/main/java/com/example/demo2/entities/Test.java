@@ -18,10 +18,4 @@ public class Test {
         this.dayType = dayType;
     }
 
-    public String getCourseId() { return courseId; }
-    public String getCourseName() { return courseName; }
-    public int getCourseDuration() { return courseDuration; }
-    public double getCoursePrice() { return coursePrice; }
-    public String getLecturerName() { return lecturerName; }
-    public String getDayType() { return dayType; }
 }
