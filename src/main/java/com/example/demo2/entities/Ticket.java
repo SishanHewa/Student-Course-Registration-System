@@ -27,5 +27,3 @@ package com.example.demo2.entities;
         public void setStatus(String status) { this.status = status; }
         public void setAdminComment(String adminComment) { this.adminComment = adminComment; }
     }
-
-
