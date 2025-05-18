@@ -1,0 +1,4 @@
+CS001,Cyber security,4,400000.0,DR.Kamal,weekday
+DS003,Data Science,4,3200000.0,Dr.namalee,weekday
+ISE1001,Information system engineering,4,600000.0,namal,weekday
+EE001,Electrical and Electronic Engineering,4,8000000.0,Prabha Harankahadeniya,weekday

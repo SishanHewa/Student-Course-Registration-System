@@ -10,9 +10,9 @@ import java.util.List;
 
 public class CourseService {
     private final FileManager fileManager = new FileManager();
-    private final String COURSE_DETAILS_PATH = "/Users/sishanhewapathirana/coursedetails.txt";
-    private final String ENROLLED_COURSE_PATH = "/Users/sishanhewapathirana/enrolledcourse.txt";
-    private final String COURSE_STATUS_PATH = "/Users/sishanhewapathirana/coursestatus.txt";
+    private final String COURSE_DETAILS_PATH = "data/coursedetails.txt";
+    private final String ENROLLED_COURSE_PATH = "data/enrolledcourse.txt";
+    private final String COURSE_STATUS_PATH = "data/coursestatus.txt";
 
     public void addCourse(Course course) throws IOException {
         String line = String.join(",",

@@ -1,0 +1,12 @@
+CS001,sishan,rejected
+DS003,sishan,enrolled
+DS003,ramika2,rejected
+CS001,ramika2,rejected
+ISE1001,sishan,enrolled
+ISE1001,ranuda2,rejected
+DS003,ranuda2,enrolled
+EE001,wishva31,rejected
+CS001,wishva31,enrolled
+EE001,sishan,pending
+EE001,ramika2,pending
+ISE1001,ramika2,pending
