@@ -10,7 +10,7 @@ import java.util.List;
 
 public class AdminService {
     private final FileManager fileManager = new FileManager();
-    private final String ADMIN_CREDENTIALS_PATH = "/Users/sishanhewapathirana/admin_credentials.txt";
+    private final String ADMIN_CREDENTIALS_PATH = "data/admin_credentials.txt";
 
     public boolean authenticateAdmin(String username, String password) throws IOException {
         return fileManager.readLines(ADMIN_CREDENTIALS_PATH).stream()
