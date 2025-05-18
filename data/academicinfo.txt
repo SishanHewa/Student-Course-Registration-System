@@ -1,0 +1,13 @@
+sishan,St.Peters.College,Commerce,3
+ramika2,thomas,Physical Sciences,3
+vimu,Kaluthara vidyala,Physical Sciences,3
+mannish,royal college,Biological Science,3
+master12,angoda central college,Physical Sciences,3
+angelo2,kunu ala,Physical Sciences,3
+ranuda2,thurstan,Commerce,3
+wishva31,kudda maha vidyalaya,Commerce,3
+thenul2,royal,Physical Sciences,3
+minula2,gamini,Technology,3
+sethmin2,balika,Commerce,3
+enubaba,gothayami,Commerce,3
+bashitha,sliit,Commerce,4

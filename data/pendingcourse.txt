@@ -1,0 +1,3 @@
+EE001,sishan,Online,8000000.0,2srsr
+EE001,ramika2,Online,8000000.0,REF-EE001-ramika2
+ISE1001,ramika2,Online,600000.0,REF-ISE1001-ramika2
