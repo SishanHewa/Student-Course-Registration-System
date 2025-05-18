@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TicketService {
-    private final String FILE_PATH = "/Users/sishanhewapathirana/tickets.txt";
+    private final String FILE_PATH = "data/tickets.txt";
     private final FileManager fileManager = new FileManager();
 
     public void submitTicket(Ticket ticket) throws IOException {
