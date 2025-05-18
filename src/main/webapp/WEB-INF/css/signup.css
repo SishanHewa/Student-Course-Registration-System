@@ -1,0 +1,148 @@
+/* Color Palette
+ * Primary: #335765 (Dark Teal)
+ * Secondary: #74A8A4 (Teal)
+ * Accent: #B6D9E0 (Light Blue)
+ * Background: #DBE2DC (Light Gray)
+ * Accent Dark: #7F543D (Brown)
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #DBE2DC;
+    color: #335765;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.signup-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(51, 87, 101, 0.1);
+}
+
+.header {
+    background-color: #335765;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+form {
+    padding: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #DBE2DC;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #74A8A4;
+    box-shadow: 0 0 0 2px rgba(116, 168, 164, 0.2);
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #74A8A4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #335765;
+}
+
+.error-message {
+    background-color: rgba(255, 99, 71, 0.1);
+    color: tomato;
+    padding: 12px 25px;
+    margin: 15px 25px 0;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+
+.error-message:not(:empty) {
+    display: block;
+}
+
+.login-link {
+    text-align: center;
+    padding: 20px;
+    color: #335765;
+    font-size: 14px;
+    border-top: 1px solid #DBE2DC;
+}
+
+.login-link a {
+    color: #7F543D;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    color: #335765;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, .signup-btn {
+        padding: 12px;
+    }
+}

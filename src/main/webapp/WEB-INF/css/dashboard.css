@@ -1,0 +1,353 @@
+/*
+   Simple Dashboard CSS using color palette:
+   - #335765 (Dark Blue)
+   - #74A8A4 (Teal)
+   - #B6D9E0 (Light Blue)
+   - #DBE2DC (Light Gray)
+   - #7F543D (Brown)
+*/
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #DBE2DC;
+    color: #335765;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.app-header {
+    background-color: #335765;
+    padding: 15px 20px;
+    color: white;
+    text-align: left;
+}
+
+.portal-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Main Navigation */
+.main-nav {
+    display: flex;
+    background-color: #74A8A4;
+    padding: 0 10px;
+    overflow-x: auto;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.main-nav a.active {
+    background-color: #B6D9E0;
+    color: #335765;
+    border-bottom: 3px solid #335765;
+}
+
+.main-nav .logout-link {
+    margin-left: auto;
+    color: #DBE2DC;
+}
+
+.main-nav .logout-link:hover {
+    background-color: rgba(127, 84, 61, 0.2);
+}
+
+/* Welcome Bar */
+.welcome-bar {
+    background-color: #B6D9E0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #DBE2DC;
+}
+
+.welcome-bar h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #335765;
+}
+
+/* Main Content Area */
+.content {
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    color: #335765;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #74A8A4;
+}
+
+.content-section {
+    margin-bottom: 30px;
+}
+
+/* Information Display */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid #DBE2DC;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #7F543D;
+    margin-right: 10px;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.info-value {
+    color: #335765;
+}
+
+/* Course List */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border-left: 4px solid #74A8A4;
+}
+
+.course-header {
+    background-color: #DBE2DC;
+    padding: 12px 15px;
+    border-bottom: 1px solid #DBE2DC;
+}
+
+.course-title {
+    margin: 0;
+    color: #335765;
+    font-size: 1.1rem;
+}
+
+.course-id {
+    font-size: 0.8rem;
+    color: #7F543D;
+}
+
+.course-details {
+    padding: 15px;
+}
+
+.course-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.course-detail {
+    font-size: 0.9rem;
+}
+
+.course-status {
+    margin-top: 10px;
+    text-align: right;
+}
+
+.enroll-button {
+    background-color: #74A8A4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.enroll-button:hover {
+    background-color: #335765;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status.pending {
+    background-color: #ffe58f;
+    color: #856404;
+}
+
+.status.enrolled {
+    background-color: #74A8A4;
+    color: white;
+}
+
+.status.other {
+    background-color: #DBE2DC;
+    color: #335765;
+}
+
+/* Tickets */
+.new-ticket-button {
+    background-color: #335765;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.new-ticket-button:hover {
+    background-color: #74A8A4;
+}
+
+.empty-tickets {
+    text-align: center;
+    padding: 30px;
+    color: #7F543D;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ticket-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #74A8A4;
+}
+
+.ticket-header {
+    background-color: #DBE2DC;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-id {
+    font-weight: 600;
+    color: #335765;
+}
+
+.ticket-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.ticket-status.open {
+    background-color: #74A8A4;
+    color: white;
+}
+
+.ticket-status.closed {
+    background-color: #DBE2DC;
+    color: #7F543D;
+}
+
+.ticket-status.processing {
+    background-color: #B6D9E0;
+    color: #335765;
+}
+
+.ticket-details {
+    padding: 15px;
+}
+
+.ticket-details p {
+    margin-bottom: 10px;
+}
+
+.admin-response {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    border-left: 3px solid #7F543D;
+}
+
+/* Footer */
+.app-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #335765;
+    color: #DBE2DC;
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .course-info {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    .main-nav a {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .main-nav .logout-link {
+        margin-left: 0;
+        width: 100%;
+    }
+}
