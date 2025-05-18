@@ -1,0 +1,102 @@
+/* Color Palette
+#335765 - Dark teal (primary dark)
+#74A8A4 - Medium teal (primary)
+#B6D9E0 - Light blue (secondary light)
+#DBE2DC - Off-white (background)
+#7F543D - Brown (accent)
+*/
+
+body {
+    background-color: #DBE2DC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.remove-admin-card {
+    max-width: 550px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #335765;
+    color: white;
+    padding: 1.2rem;
+    border-bottom: none;
+}
+
+.card-body {
+    background-color: white;
+    padding: 2rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.form-label {
+    color: #335765;
+    font-weight: 500;
+}
+
+.input-group-text {
+    background-color: #74A8A4;
+    color: white;
+    border: none;
+}
+
+.form-control {
+    border: 1px solid #B6D9E0;
+    padding: 0.6rem;
+}
+
+.form-control:focus {
+    border-color: #74A8A4;
+    box-shadow: 0 0 0 0.25rem rgba(116, 168, 164, 0.25);
+}
+
+.form-control[readonly] {
+    background-color: #f8f9fa;
+}
+
+.btn-danger {
+    background-color: #7F543D;
+    border-color: #7F543D;
+    padding: 0.6rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #6a4633;
+    border-color: #6a4633;
+}
+
+.btn-secondary {
+    background-color: #74A8A4;
+    border-color: #74A8A4;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a8c88;
+    border-color: #5a8c88;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    color: #842029;
+    border-radius: 8px;
+}
+
+/* Add subtle card shadow */
+.shadow {
+    box-shadow: 0 0.3rem 1.5rem rgba(51, 87, 101, 0.15) !important;
+}

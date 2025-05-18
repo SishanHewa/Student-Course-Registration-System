@@ -7,7 +7,8 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.io.IOException;
 
-public class AddNewAdminServlet extends HttpServlet {
+public class
+AddNewAdminServlet extends HttpServlet {
     private final AdminService adminService = new AdminService();
 
     @Override
@@ -38,4 +39,5 @@ public class AddNewAdminServlet extends HttpServlet {
         response.sendRedirect("adminDashboard.jsp?tab=admins");
     }
 }
+
 

@@ -1,0 +1,227 @@
+/* 
+  Ticket Management System CSS
+  Color Palette:
+  - #335765 (Dark Teal - Primary)
+  - #74A8A4 (Medium Teal)
+  - #B6D9E0 (Light Blue)
+  - #DBE2DC (Light Gray)
+  - #7F543D (Brown Accent)
+*/
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #DBE2DC;
+  color: #335765;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #B6D9E0;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #335765;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-icon {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.alert-success {
+  background-color: rgba(116, 168, 164, 0.2);
+  border-left: 4px solid #74A8A4;
+  color: #335765;
+}
+
+.alert-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Empty State */
+.empty-state {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Ticket List Styles */
+.tickets-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.ticket-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+  padding: 15px;
+  background-color: #B6D9E0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-id {
+  font-weight: 600;
+  color: #335765;
+}
+
+.ticket-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.status-pending {
+  background-color: rgba(127, 84, 61, 0.15);
+  color: #7F543D;
+}
+
+.status-solved {
+  background-color: rgba(116, 168, 164, 0.2);
+  color: #335765;
+}
+
+.ticket-info {
+  padding: 15px;
+  border-bottom: 1px solid #DBE2DC;
+}
+
+.info-row {
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.info-row.message {
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 600;
+  color: #335765;
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.message .label {
+  margin-bottom: 5px;
+}
+
+.value {
+  color: #555;
+}
+
+/* Form Styles */
+.ticket-form {
+  padding: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #335765;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #B6D9E0;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #74A8A4;
+  box-shadow: 0 0 0 2px rgba(116, 168, 164, 0.2);
+}
+
+textarea.form-control {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.btn-update {
+  background-color: #335765;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-update:hover {
+  background-color: #74A8A4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tickets-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-row {
+    flex-direction: column;
+  }
+  
+  .label {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+}

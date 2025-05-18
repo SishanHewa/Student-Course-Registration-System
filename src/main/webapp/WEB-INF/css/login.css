@@ -1,0 +1,105 @@
+/* --------------------------------------------------
+ * BODY & BACKGROUND
+ * -------------------------------------------------- */
+body {
+    font-family: 'Arial', sans-serif;
+    /* Use the SLIIT-malabe.jpg as the background image */
+    background: url('https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+    /* Keep the page height and alignment from the old style */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* So the overlay can go above */
+}
+
+/* Semi-transparent overlay to darken background and improve readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* adjusts the darkness level */
+}
+
+/* --------------------------------------------------
+ * LOGIN CONTAINER
+ * -------------------------------------------------- */
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* near-white background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    z-index: 2; /* Ensures the container is above the overlay */
+}
+
+/* Headings */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* --------------------------------------------------
+ * INPUT FIELDS
+ * -------------------------------------------------- */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* --------------------------------------------------
+ * BUTTON
+ * -------------------------------------------------- */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #0072ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #0057cc;
+}
+
+/* --------------------------------------------------
+ * ERROR MESSAGE
+ * -------------------------------------------------- */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+ * LINK TO SIGNUP
+ * -------------------------------------------------- */
+.login-container p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-container a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
