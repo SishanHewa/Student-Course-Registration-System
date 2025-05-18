@@ -1,5 +1,5 @@
 
-package com.example.demo2.Controllers;
+package com.example.demo2.controllers;
 
 import com.example.demo2.services.AdminService;
 import jakarta.servlet.*;
