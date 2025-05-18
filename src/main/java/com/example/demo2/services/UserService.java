@@ -62,5 +62,68 @@ public class UserService {
     public void updateUserStatus(String username, String newStatus) throws IOException {
         fileManager.updateLine(STATUS_FILE_PATH, username, username + "," + newStatus);
     }
+    public void updatePersonalInfo(String username, String updatedLine) throws IOException {
+        fileManager.updateLine(PERSONAL_INFO_PATH, username, updatedLine);
+    }
+
+    public void updateAcademicInfo(String username, String updatedLine) throws IOException {
+        fileManager.updateLine(ACADEMIC_INFO_PATH, username, updatedLine);
+    }
+
+    public void updateUserDetails(String username, String updatedLine) throws IOException {
+        fileManager.updateLine(USER_DETAILS_PATH, username, updatedLine);
+    }
+
+    public PersonalInfo getPersonalInfo(String username) throws IOException {
+        for (String line : fileManager.readLines(PERSONAL_INFO_PATH)) {
+            String[] parts = line.split(",");
+            if (parts.length == 9 && parts[0].equalsIgnoreCase(username)) {
+                return new PersonalInfo(
+                        parts[0], // username
+                        parts[1], // address
+                        parts[2], // email
+                        parts[3], // phone
+                        parts[4], // nic
+                        parts[5], // dob
+                        parts[6], // gender
+                        parts[7], // nationality
+                        parts[8]  // name
+                );
+            }
+        }
+        return null;
+    }
+
+    public AcademicInfo getAcademicInfo(String username) throws IOException {
+        for (String line : fileManager.readLines(ACADEMIC_INFO_PATH)) {
+            String[] parts = line.split(",");
+            if (parts.length == 4 && parts[0].equalsIgnoreCase(username)) {
+                return new AcademicInfo(
+                        parts[0], // username
+                        parts[1], // school
+                        parts[2], // stream
+                        parts[3]  // passedSubjects
+                );
+            }
+        }
+        return null;
+    }
+    public void savePersonalInfo(PersonalInfo pInfo) throws IOException {
+        String line = String.join(",", pInfo.getUsername(), pInfo.getAddress(), pInfo.getEmail(), pInfo.getPhone(),
+                pInfo.getNic(), pInfo.getDob(), pInfo.getGender(), pInfo.getNationality(), pInfo.getName());
+        fileManager.appendLine(PERSONAL_INFO_PATH, line);
+    }
+
+    public void saveAcademicInfo(AcademicInfo aInfo) throws IOException {
+        String line = String.join(",", aInfo.getUsername(), aInfo.getSchool(), aInfo.getStream(), aInfo.getPassedSubjects());
+        fileManager.appendLine(ACADEMIC_INFO_PATH, line);
+    }
+
+    public void recordRegistrationTime(String username) throws IOException {
+        String timestamp = java.time.LocalDateTime.now()
+                .atZone(ZoneId.systemDefault())
+                .format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        fileManager.appendLine(REGISTERED_TIME_PATH, username + "," + timestamp);
+    }
 
 }

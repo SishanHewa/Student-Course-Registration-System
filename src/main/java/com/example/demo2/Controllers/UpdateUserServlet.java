@@ -6,7 +6,7 @@ import jakarta.servlet.http.*;
 import java.io.IOException;
 
 public class UpdateUserServlet extends HttpServlet {
-    private final UserService userService = new UserService();
+    UserService userService = new UserService();
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
