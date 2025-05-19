@@ -1,6 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< Updated upstream
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 </web-app>
+=======
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- USER Servlets -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.SignupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserFormServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.UserFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserFormServlet</servlet-name>
+        <url-pattern>/UserFormServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/UpdateUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ADMIN Servlets -->
+    <servlet>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.AdminLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogoutServlet</servlet-name>
+        <url-pattern>/AdminLogoutServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddNewAdminServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.AddNewAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNewAdminServlet</servlet-name>
+        <url-pattern>/AddNewAdminServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RemoveAdminServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.RemoveAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveAdminServlet</servlet-name>
+        <url-pattern>/RemoveAdminServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- COURSE & ENROLLMENT Servlets -->
+    <servlet>
+        <servlet-name>AddCourseServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.AddCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCourseServlet</servlet-name>
+        <url-pattern>/AddCourseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CourseDetailsServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.CourseDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseDetailsServlet</servlet-name>
+        <url-pattern>/CourseDetailsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EnrollmentServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.EnrollmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnrollmentServlet</servlet-name>
+        <url-pattern>/EnrollmentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HandleCourseRequestServlet</servlet-name>
+        <servlet-class>com.example.demo2.services.HandleCourseRequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleCourseRequestServlet</servlet-name>
+        <url-pattern>/HandleCourseRequestServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AcceptStudentServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.AcceptStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AcceptStudentServlet</servlet-name>
+        <url-pattern>/AcceptStudentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>RemoveCourseServlet</servlet-name>
+        <servlet-class>com.example.demo2.Controllers.RemoveCourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveCourseServlet</servlet-name>
+        <url-pattern>/RemoveCourseServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
+>>>>>>> Stashed changes
