@@ -12,12 +12,12 @@ import java.util.*;
 
 public class UserService {
     private final FileManager fileManager = new FileManager();
-    private final String USERS_FILE_PATH = "data/users.txt";
-    private final String USER_DETAILS_PATH = "data/userdetails.txt";
-    private final String STATUS_FILE_PATH = "data/status.txt";
-    private final String PERSONAL_INFO_PATH = "data/personalinfo.txt";
-    private final String ACADEMIC_INFO_PATH = "data/academicinfo.txt";
-    private final String REGISTERED_TIME_PATH = "data/registeredtime.txt";
+    private final String USERS_FILE_PATH = "/Users/sishanhewapathirana/users.txt";
+    private final String USER_DETAILS_PATH = "/Users/sishanhewapathirana/userdetails.txt";
+    private final String STATUS_FILE_PATH = "/Users/sishanhewapathirana/status.txt";
+    private final String PERSONAL_INFO_PATH = "/Users/sishanhewapathirana/personalinfo.txt";
+    private final String ACADEMIC_INFO_PATH = "/Users/sishanhewapathirana/academicinfo.txt";
+    private final String REGISTERED_TIME_PATH = "/Users/sishanhewapathirana/registeredtime.txt";
 
 
     public boolean authenticate(String username, String password) throws IOException {

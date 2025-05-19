@@ -10,3 +10,6 @@ CS001,wishva31,enrolled
 EE001,sishan,pending
 EE001,ramika2,pending
 ISE1001,ramika2,pending
+DS003,wishva31,pending
+CS001,ranuda2,pending
+CS001,minula2,pending

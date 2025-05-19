@@ -1,5 +1,5 @@
 
-package com.example.demo2.controllers;
+package com.example.demo2.Controllers;
 
 import com.example.demo2.entities.Course;
 import com.example.demo2.services.CourseService;

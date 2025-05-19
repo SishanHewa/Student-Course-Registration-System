@@ -8,7 +8,7 @@
     <!-- USER Servlets -->
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.LoginServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
@@ -17,7 +17,7 @@
 
     <servlet>
         <servlet-name>SignupServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.SignupServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.SignupServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>SignupServlet</servlet-name>
@@ -26,7 +26,7 @@
 
     <servlet>
         <servlet-name>ProfileServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.ProfileServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.ProfileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProfileServlet</servlet-name>
@@ -35,7 +35,7 @@
 
     <servlet>
         <servlet-name>UserFormServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.UserFormServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.UserFormServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserFormServlet</servlet-name>
@@ -44,7 +44,7 @@
 
     <servlet>
         <servlet-name>UpdateUserServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.UpdateUserServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.UpdateUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UpdateUserServlet</servlet-name>
@@ -53,7 +53,7 @@
 
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.LogoutServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.LogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
@@ -64,7 +64,7 @@
     <!-- ADMIN Servlets -->
     <servlet>
         <servlet-name>AdminLogoutServlet</servlet-name>
-        <servlet-class>com.example.demo2.controllers.AdminLogoutServlet</servlet-class>
+        <servlet-class>com.example.demo2.Controllers.AdminLogoutServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>AdminLogoutServlet</servlet-name>
